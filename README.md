@@ -35,7 +35,7 @@ npm i -s firebase
 
 Basically all you have to do is to add config file in your main application file and initialize firebase.
 
-Your code should look this:
+Your code should look like this:
 ```js
 import firebase from "firebase";    
 const config = {  
@@ -50,7 +50,8 @@ firebase.initializeApp(config);
 ```
 4. Copy/Paste **FirebaseLogin** and put it in your project.
 5. Import **FirebaseLogin** component and put it in you render method. 
-(**Make sure you reserved whole screen for this component!**)
+
+**Make sure you reserved whole screen for this component!**
 ```js
 import FirebaseLogin from "./FirebaseLogin";
 
