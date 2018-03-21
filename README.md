@@ -32,6 +32,7 @@ Folder **FirebaseLogin** contains:
 npm i -s firebase
 ```
 3.  Configure your application with firebase. You can find some information [here](https://firebase.google.com/docs/web/setup).
+
 Basically all you have to do is to add config file in your main application file and initialize firebase.
 Your code should look this:
 ```js
@@ -47,22 +48,22 @@ const config = {
 firebase.initializeApp(config);
 ```
 4. Copy/Paste **FirebaseLogin** and put it in your project.
-5.  Now simply import **FirebaseLogin** component and put it in you render method. (**Make sure you reserved whole screen for this component!**)
+5. Import **FirebaseLogin** component and put it in you render method. (**Make sure you reserved whole screen for this component!**)
 ```js
 import FirebaseLogin from "./FirebaseLogin";
 
 render() {
-	retrun (
-		<FirebaseLogin/>
-	)
+  retrun (
+    <FirebaseLogin/>
+  )
 }
 ```
 
 Component comes with few props:
 ```js
 <FirebaseLogin  
-	login={user => console.warn(user)}  
-	background={path_to_your_background_image}  
+  login={user => console.warn(user)}  
+  background={path_to_your_background_image}  
 />
 ```
 **Login** - this props will be invoked when user successfully log in. In return you receive basic information about user.
