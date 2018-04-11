@@ -57,7 +57,7 @@ import FirebaseLogin from "./FirebaseLogin";
 
 render() {
   retrun (
-    <FirebaseLogin/>
+    <FirebaseLogin login={user => console.warn(user)}/>
   )
 }
 ```
