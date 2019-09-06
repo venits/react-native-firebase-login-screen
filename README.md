@@ -1,7 +1,6 @@
 ﻿
 # React Native Firebase Login Screen
 
----
 
 **react-native-firebase-login-screen** is proudly sponsored by
 
@@ -10,7 +9,6 @@
   NativeForms - Build forms, surveys and polls for React Native apps.
 </a>
 
----
 
 ## Introduction
 The best way to start your React Native application with **Firebase** authentication.
