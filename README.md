@@ -1,8 +1,8 @@
-﻿
 # React Native Firebase Login Screen
 
+More templates at [ReactNativeMarket.com](http://reactnativemarket.com/) 💖
 
-**react-native-firebase-login-screen** is proudly sponsored by
+This repo is proudly sponsored by
 
 <a href="https://nativeforms.com" rel="nofollow" target="_blank">
   <img src="https://raw.githubusercontent.com/venits/native-forms/master/assets/sponsor.png" width="350"><br />
@@ -10,82 +10,59 @@
 </a>
 
 
-## Introduction
-The best way to start your React Native application with **Firebase** authentication.
+## How to use?
 
-**Works both with expo and react-native init.**
+1. Download or clone this repo.
 
-*All screens are made only with native components.*
+2. Install dependencies.
 
-Folder **FirebaseLogin** contains:
-1. Login screen
-2. Register screen
-3. Forgot password screen
+```js
+npm install
+// or
+yarn install
+```
 
+3. Go to `src/core/config.js` and replace `FIREBASE_CONFIG` with your own firebase config.
 
+```js
+export const FIREBASE_CONFIG = {
+  apiKey: "xxx-yyy-zzz" // etc.
+  // rest of your firebase config
+};
+```
 
+4. Run project on iOS / Android.
+
+```js
+ npm run ios // npm run android
+ // or
+ yarn ios // yarn android
+```
+
+Project was created using [Expo](https://expo.io/). If you want standard native project please run following command:
+
+```js
+expo eject
+```
 
 ## Preview
 
-### Login 
-![Preview](https://raw.githubusercontent.com/venits/react-native-router-flux/master/login.jpg)
-### Create Account
-![Preview](https://raw.githubusercontent.com/venits/react-native-router-flux/master/register.jpg)
-### Forgot Password
-![Preview](https://raw.githubusercontent.com/venits/react-native-router-flux/master/forgot.jpg)
+![homescreen](https://raw.githubusercontent.com/venits/react-native-market/master/assets/firebase-login-template/homescreen.png)
+![login](https://raw.githubusercontent.com/venits/react-native-market/master/assets/firebase-login-template/login.png)
+![register](https://raw.githubusercontent.com/venits/react-native-market/master/assets/firebase-login-template/register.png)
+![forgot](https://raw.githubusercontent.com/venits/react-native-market/master/assets/firebase-login-template/forgot.png)
+![dashboard](https://raw.githubusercontent.com/venits/react-native-market/master/assets/firebase-login-template/dashboard.png)
 
-## How to use?
-1. Download **FirebaseLogin** from this repo. 
-2. Add **firebase** module to your project:
-```js
-npm i -s firebase
-```
-3.  Configure your application with firebase. You can find some information [here](https://firebase.google.com/docs/web/setup).
+## Live preview on Expo
 
-Basically all you have to do is to add config file in your main application file and initialize firebase.
+Template is available on Expo:
+https://expo.io/@venits/react-native-firebase-login-template-typescript
 
-Your code should look like this:
-```js
-import firebase from "firebase";    
-const config = {  
-  apiKey: "xyz",  
-  authDomain: "xyz",  
-  databaseURL: "xyz",  
-  projectId: "xyz",  
-  storageBucket: "xyz",  
-  messagingSenderId: "xyz"  
-};  
-firebase.initializeApp(config);
-```
-4. Copy/Paste **FirebaseLogin** and put it in your project.
-5. Import **FirebaseLogin** component and put it in you render method. 
+## Support
 
-**Make sure you reserved whole screen for this component!**
-```js
-import FirebaseLogin from "./FirebaseLogin";
+In case of any questions or problems, please contact me at:
+[hello@reactnativemarket.com](mailto:hello@reactnativemarket.com)
 
-render() {
-  retrun (
-    <FirebaseLogin login={user => console.warn(user)}/>
-  )
-}
-```
+### Happy Coding 💖
 
-Component comes with few props:
-```js
-<FirebaseLogin  
-  login={user => console.warn(user)}  
-  background={path_to_your_background_image}  
-/>
-```
-**Login** - this props will be invoked when user successfully log in. In return you receive basic information about user.
-
-**Background** - path to image you want to use as background.
-## Summary 
-
-I hope this module will save you several hours of work ;)
-
-In case of any problems or suggestions you can email me at:
-tomasz.przybyl.it@gmail.com
-
-**Happy Coding!**
+### [ReactNativeMarket.com](http://reactnativemarket.com/)
