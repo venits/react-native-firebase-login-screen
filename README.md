@@ -1,14 +1,14 @@
 # React Native Firebase Login Screen
 
-More templates at [ReactNativeMarket.com](http://reactnativemarket.com/) 💖
+This repo is proudly sponsored by:
 
-This repo is proudly sponsored by
+<a href="https://reactnativemarket.com/" rel="nofollow" target="_blank">
+  <img src="https://raw.githubusercontent.com/venits/react-native-market/master/assets/banner.png" width="280"><br />
+  React Native Templates & Starter Kits and Apps for easier start.
 
-<a href="https://nativeforms.com" rel="nofollow" target="_blank">
-  <img src="https://raw.githubusercontent.com/venits/native-forms/master/assets/sponsor.png" width="350"><br />
-  Build forms, surveys and polls for React Native apps.
-</a>
+## Demo
 
+https://react-firebase-login-template.web.app
 
 ## How to use?
 
@@ -26,9 +26,9 @@ yarn install
 
 ```js
 export const FIREBASE_CONFIG = {
-  apiKey: "xxx-yyy-zzz" // etc.
+  apiKey: 'xxx-yyy-zzz', // etc.
   // rest of your firebase config
-};
+}
 ```
 
 4. Run project on iOS / Android.
@@ -39,12 +39,6 @@ export const FIREBASE_CONFIG = {
  yarn ios // yarn android
 ```
 
-Project was created using [Expo](https://expo.io/). If you want standard native project please run following command:
-
-```js
-expo eject
-```
-
 ## Preview
 
 ![homescreen](https://raw.githubusercontent.com/venits/react-native-market/master/assets/firebase-login-template/homescreen.png)
@@ -53,16 +47,11 @@ expo eject
 ![forgot](https://raw.githubusercontent.com/venits/react-native-market/master/assets/firebase-login-template/forgot.png)
 ![dashboard](https://raw.githubusercontent.com/venits/react-native-market/master/assets/firebase-login-template/dashboard.png)
 
-## Live preview on Expo
-
-Template is available on Expo:
-https://expo.io/@venits/react-native-firebase-login-template-typescript
-
 ## Support
 
 In case of any questions or problems, please contact me at:
 [hello@reactnativemarket.com](mailto:hello@reactnativemarket.com)
 
-### Happy Coding 💖
+### Happy Coding 🚀
 
 ### [ReactNativeMarket.com](http://reactnativemarket.com/)
