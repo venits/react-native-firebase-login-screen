@@ -5,7 +5,7 @@ export const logoutUser = () => {
   firebase.auth().signOut()
 }
 
-export const signInUser = async ({ name, email, password }) => {
+export const signUpUser = async ({ name, email, password }) => {
   try {
     const user = await firebase
       .auth()

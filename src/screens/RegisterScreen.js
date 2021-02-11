@@ -11,7 +11,7 @@ import { theme } from '../core/theme'
 import { emailValidator } from '../helpers/emailValidator'
 import { passwordValidator } from '../helpers/passwordValidator'
 import { nameValidator } from '../helpers/nameValidator'
-import { signInUser } from '../api/auth-api'
+import { signUpUser } from '../api/auth-api'
 import Toast from '../components/Toast'
 
 const RegisterScreen = ({ navigation }) => {
@@ -32,7 +32,7 @@ const RegisterScreen = ({ navigation }) => {
       return
     }
     setLoading(true)
-    const response = await signInUser({
+    const response = await signUpUser({
       name: name.value,
       email: email.value,
       password: password.value,
