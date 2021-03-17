@@ -20,7 +20,7 @@ if (!firebase.apps.length) {
   firebase.initializeApp(FIREBASE_CONFIG)
 }
 
-const App = () => {
+export default function App() {
   return (
     <Provider theme={theme}>
       <NavigationContainer>
@@ -47,5 +47,3 @@ const App = () => {
     </Provider>
   )
 }
-
-export default App
