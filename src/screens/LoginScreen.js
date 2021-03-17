@@ -13,7 +13,7 @@ import { passwordValidator } from '../helpers/passwordValidator'
 import { loginUser } from '../api/auth-api'
 import Toast from '../components/Toast'
 
-const LoginScreen = ({ navigation }) => {
+export default function LoginScreen({ navigation }) {
   const [email, setEmail] = useState({ value: '', error: '' })
   const [password, setPassword] = useState({ value: '', error: '' })
   const [loading, setLoading] = useState()
@@ -66,7 +66,7 @@ const LoginScreen = ({ navigation }) => {
       />
       <View style={styles.forgotPassword}>
         <TouchableOpacity
-          onPress={() => navigation.navigate('ForgotPasswordScreen')}
+          onPress={() => navigation.navigate('ResetPasswordScreen')}
         >
           <Text style={styles.forgot}>Forgot your password?</Text>
         </TouchableOpacity>
@@ -104,5 +104,3 @@ const styles = StyleSheet.create({
     color: theme.colors.primary,
   },
 })
-
-export default LoginScreen

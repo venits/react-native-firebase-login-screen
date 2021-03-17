@@ -11,10 +11,10 @@ import { theme } from '../core/theme'
 import { emailValidator } from '../helpers/emailValidator'
 import { passwordValidator } from '../helpers/passwordValidator'
 import { nameValidator } from '../helpers/nameValidator'
-import { signInUser } from '../api/auth-api'
+import { signUpUser } from '../api/auth-api'
 import Toast from '../components/Toast'
 
-const RegisterScreen = ({ navigation }) => {
+export default function RegisterScreen({ navigation }) {
   const [name, setName] = useState({ value: '', error: '' })
   const [email, setEmail] = useState({ value: '', error: '' })
   const [password, setPassword] = useState({ value: '', error: '' })
@@ -32,7 +32,7 @@ const RegisterScreen = ({ navigation }) => {
       return
     }
     setLoading(true)
-    const response = await signInUser({
+    const response = await signUpUser({
       name: name.value,
       email: email.value,
       password: password.value,
@@ -106,5 +106,3 @@ const styles = StyleSheet.create({
     color: theme.colors.primary,
   },
 })
-
-export default RegisterScreen

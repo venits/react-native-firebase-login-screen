@@ -9,7 +9,7 @@ import { emailValidator } from '../helpers/emailValidator'
 import { sendEmailWithPassword } from '../api/auth-api'
 import Toast from '../components/Toast'
 
-const ForgotPasswordScreen = ({ navigation }) => {
+export default function ResetPasswordScreen({ navigation }) {
   const [email, setEmail] = useState({ value: '', error: '' })
   const [loading, setLoading] = useState(false)
   const [toast, setToast] = useState({ value: '', type: '' })
@@ -63,5 +63,3 @@ const ForgotPasswordScreen = ({ navigation }) => {
     </Background>
   )
 }
-
-export default ForgotPasswordScreen
