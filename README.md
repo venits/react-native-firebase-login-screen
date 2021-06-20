@@ -32,12 +32,19 @@ export const FIREBASE_CONFIG = {
 ```
 
 4. Run project on iOS / Android.
-
+ios
 ```js
  npm run ios // npm run android
  // or
  yarn ios // yarn android
 ```
+android
+  ```js
+ npm run android
+ // or
+  yarn android
+``` 
+
 
 ## Preview
 
